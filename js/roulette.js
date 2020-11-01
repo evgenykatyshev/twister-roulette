@@ -9,8 +9,18 @@ $(document).ready(function() {
     //alert('from URL: '+lang);
     if(urlLang != 'be' && urlLang != 'de' && urlLang != 'en' && urlLang != 'es' && urlLang != 'fr' && urlLang != 'it' && urlLang != 'ru' && urlLang != 'uk' && urlLang != 'zh') {
       cookieLang = $.cookie('lang'); // Get language from cookies
-      if(cookieLang != 'be' && cookieLang != 'de' && cookieLang != 'en' && cookieLang != 'es' && cookieLang != 'fr' && cookieLang != 'it' && cookieLang != 'ru' && cookieLang != 'uk' && cookieLang != 'zh')
-        lang = 'en'; // Default language
+      if(cookieLang != 'be' && cookieLang != 'de' && cookieLang != 'en' && cookieLang != 'es' && cookieLang != 'fr' && cookieLang != 'it' && cookieLang != 'ru' && cookieLang != 'uk' && cookieLang != 'zh') {
+        if(window.navigator) {
+          var navigatorLang = window.navigator.language;
+          navigatorLang = navigatorLang.substr(0, 2).toLowerCase();
+          if(navigatorLang != 'be' && navigatorLang != 'de' && navigatorLang != 'en' && navigatorLang != 'es' && navigatorLang != 'fr' && navigatorLang != 'it' && navigatorLang != 'ru' && navigatorLang != 'uk' && navigatorLang != 'zh')
+            lang = 'en'; // Default language
+          else {
+            lang = navigatorLang;
+            $.cookie('lang', lang, { path: '/' });
+          }
+        }        
+      }
       else {
         lang = cookieLang;
         $.cookie('lang', lang, { path: '/' });
