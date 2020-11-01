@@ -97,7 +97,12 @@ document.body.appendChild(el);
 			<use xlink:href="#sound_on_icon"></use>
 		</svg>
 	</div>-->
-  <div class="button button_lang">en</div>
+  <div class="button button_lang">
+    <svg class="button__icon language_icon">
+      <use xlink:href="#language_icon"></use>
+    </svg>
+    <span class="desktop-part">en</span>
+  </div>
   <ul id="lang-list">
     <li><a rel="alternate" hreflang="be" href="be" class="lang">Белорусский</a></li>
     <li><a rel="alternate" hreflang="de" href="de" class="lang">Deutsch</a></li>

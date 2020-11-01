@@ -42,7 +42,7 @@ $(document).ready(function() {
 
   //alert(lang);
 
-  $('.button_lang').text(lang);
+  $('.button_lang span').text(lang);
 
   var title = strings['title'][lang];
   var tip = strings['tip'][lang];
@@ -51,6 +51,9 @@ $(document).ready(function() {
   $('#title').html(title);
   $('#tip').text(tip);
   $('#old').attr('href', '//old.twister-roulette.com/'+lang);
+  $('#old').text(strings['old version'][lang]);
+  var authorArr = strings['author'][lang].split(' ');
+  $('#author').html('<span class="desktop-part">© </span><a href="//evgenykatyshev.ru/projects/twister-roulette/" class="link"><span class="desktop-part">' + authorArr[0] + ' </span>' + authorArr[1] + '</a>');
 
   var colorNames = [
     strings['red'][lang],

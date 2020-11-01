@@ -65,22 +65,6 @@ a.link:hover {
 	box-sizing: border-box;
 }
 
-.button_lang {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  text-align: center;
-  padding: 18px 0;
-  font-size: 14px;
-  color: rgba(255, 255, 255, .8);
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.button_lang:hover {
-  color: rgba(255, 255, 255, 1);
-}
-
 #lang-list {
 	z-index: 140;
   display: none;
@@ -124,6 +108,28 @@ a.link:hover {
 
 .button.disable:hover {
 	background: transparent;
+}
+
+.button_lang {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, .8);
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 76px;
+  text-align: right;
+}
+
+.button_lang span {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+}
+
+.button_lang:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 .button_settings {
