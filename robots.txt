@@ -1,0 +1,4 @@
+﻿User-Agent: *
+
+User-Agent: Yandex
+Host: twister-roulette.com

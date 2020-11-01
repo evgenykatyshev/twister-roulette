@@ -1,0 +1,440 @@
+/* Сброс стилей */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,abbr,acronym,address,cite,code,del,dfn,img,ins,kbd,q,s,samp,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,main,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:top;outline:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;transition:all .2s}
+body {line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ul{list-style:none}
+table,div,aside,main {border-collapse:collapse;border-spacing:0}
+img {border:0;max-width:100%;height:auto}
+strong{font-weight:700}
+input,label{display:block}
+
+/* */
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html {
+	height: 100%;
+	font-family: Roboto, sans-serif;
+	min-width: 200px;
+}
+
+body {
+	height: 100%;
+}
+
+a.link {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+
+a.link:hover {
+	border-bottom: 1px solid #fff;
+}
+
+#svg-sprite {
+	display: none;
+}
+
+#page_wrapper {
+	width: 100%;
+	height: 100%;
+  min-width: 320px;
+	min-height: 500px;
+	box-sizing: border-box;
+}
+
+
+
+/* главное */
+
+#header {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.button_lang {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, .8);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.button_lang:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#lang-list {
+	z-index: 140;
+  display: none;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, .1);
+  padding: 4px 0;
+  max-height: calc(100vh - 24px);
+  overflow-y: auto;
+}
+
+.lang {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  height: 48px;
+  padding: 18px 20px;
+}
+
+.lang:hover {
+  background: rgba(0, 0, 0, .05);
+}
+
+.button {
+	z-index: 120;
+	border-radius: 24px;
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: rgba(0, 0, 0, .05);
+}
+
+.button.disable:hover {
+	background: transparent;
+}
+
+.button_settings {
+	position: absolute;
+	bottom: 12px;
+	left: 12px;
+}
+
+.button_sound {
+	position: absolute;
+	bottom: 12px;
+	right: 12px;
+}
+
+.button_close {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+
+.button_play,
+.button_stop {
+	position: absolute;
+	bottom: 12px;
+	left: calc(50vw - 24px);
+}
+
+.button_stop {
+	display: none;
+}
+
+.button__icon {
+	width: 24px;
+	height: 24px;
+	opacity: .8;
+	margin: 12px;
+}
+
+.button:hover .button__icon {
+	opacity: 1;
+}
+
+.button.disable:hover .button__icon {
+	opacity: .8;
+}
+
+.button__icon_on {
+	display: none;
+}
+
+#time_period {
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, .5);
+	bottom: 36px;
+	left: 48px;
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	display: none;
+}
+
+#time {
+	font-size: 34px;
+	line-height: 48px;
+	font-weight: bold;
+	color: #fff;
+	bottom: 0;
+	left: 48px;
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+}
+
+.button_minus {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.button_plus {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+svg .bounds {
+	fill: none;
+}
+
+svg .icon {
+  fill: #fff;
+}
+
+#settings {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 300px;
+	height: calc(100% - 56px);
+	background: #fff;
+	border-radius: 16px 16px 0 0;
+	z-index: 200;
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, .75);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, .75);
+}
+
+.hidden {
+	display: none;
+}
+
+.disable {
+	opacity: .38;
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+h1 {
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+	position: absolute;
+	top: 24px;
+}
+
+#limb,
+#color-name {
+	font-size: 10vw;	
+}
+
+#limb {
+	color: #210;
+	font-weight: bold;
+	white-space: nowrap;
+	width: 100%;
+	position: absolute;
+	top: 17vh;
+}
+
+#circle {
+	width: 200vw;
+	height: 200vw;
+	background: #f00;
+	border-radius: 50%;
+	position: absolute;
+	top: 33vh;
+	left: -50vw;
+}
+
+#color-name {
+	position: absolute;
+	top: 42vh;
+	width: 100%;
+	max-height: 35vh;
+	font-weight: bold;
+	color: #fff;
+}
+
+#timer {
+	position: absolute;
+	bottom: 60px;
+	left: calc(50vw - 72px);
+	width: 144px;
+	height: 96px;
+	z-index: 100;
+}
+
+.hidden {
+	display: none;
+}
+
+#tip {
+  z-index: 120;
+	width: 100%;
+	font-size: 14px;
+	position: absolute;
+	top: 65vh;
+	color: #fff;
+  text-align: center;
+  padding: 0 16px;
+}
+
+
+#about {
+  z-index: 120;
+  font-size: 14px;
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 18px;
+  height: 48px;
+  color: #fff;
+  opacity: .8;
+}
+
+#about:hover {
+  opacity: 1;
+}
+
+#author {
+  margin-right: 16px;
+}
+
+
+/* Adaptation */
+
+@media screen and (max-width: 400px) {
+	
+	#settings {
+		width: 100vw;
+	}
+	
+}
+
+@media screen and (orientation: landscape) and (max-height: 400px),
+screen and (orientation: portrait) and (max-width: 400px) {
+
+	h1 {
+		top: 16px;
+	}
+
+  .button_lang {
+		bottom: 4px;
+		right: 4px;
+  }
+
+  #lang-list {
+    bottom: 4px;
+    right: 4px;
+    max-height: calc(100vh - 8px);
+  }
+
+	.button_settings {
+		bottom: 4px;
+		left: 4px;
+	}
+
+	.button_sound {
+		bottom: 4px;
+		right: 4px;
+	}
+
+	.button_close {
+		top: 4px;
+		left: 4px;
+	}
+
+	.button_play,
+	.button_stop {
+		bottom: 4px;
+	}
+
+	#timer {
+		bottom: 52px;
+	}
+  
+  #about {
+    font-size: 14px;
+    left: 4px;
+    bottom: 4px;
+    padding: 18px;
+    height: 48px;
+  }
+
+  #author {
+    margin-right: 8px;
+  }
+  
+  .desktop-part {
+    display: none;
+  }
+	
+}
+
+@media screen and (orientation: landscape) and (max-height: 340px) {
+
+	h1 {
+		display: none;
+	}
+
+	#limb {
+		top: 5vh;
+	}
+
+	#circle {
+		top: 21vh;
+	}
+
+	#color-name {
+		top: 30vh;
+	}
+	
+}
+
+@media screen and (orientation: landscape) {
+	
+	#limb,
+	#color-name {
+		font-size: 10vh;	
+	}
+	
+}
