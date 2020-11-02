@@ -23,6 +23,9 @@ const el = document.createElement('pwa-update');
 document.body.appendChild(el);
 </script>-->
 
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="icon" type="image/png" href="favicon.png" />
+
 <!-- jQuery -->
 <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
@@ -45,9 +48,6 @@ document.body.appendChild(el);
 <meta property="og:image" content="//twister-roulette.com/img/twister-roulette-ru.png" />
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet" />
-
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="icon" type="image/png" href="favicon.png" />
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -105,11 +105,17 @@ document.body.appendChild(el);
   </div>
   <ul id="lang-list">
     <li><a rel="alternate" hreflang="be" href="be" class="lang">Белорусский</a></li>
+    <li><a rel="alternate" hreflang="cs" href="cs" class="lang">Čeština</a></li>
     <li><a rel="alternate" hreflang="de" href="de" class="lang">Deutsch</a></li>
     <li><a rel="alternate" hreflang="en" href="en" class="lang">English</a></li>
     <li><a rel="alternate" hreflang="es" href="es" class="lang">Español</a></li>
     <li><a rel="alternate" hreflang="fr" href="fr" class="lang">Français</a></li>
+    <li><a rel="alternate" hreflang="he" href="he" class="lang">עברית</a></li>
+    <li><a rel="alternate" hreflang="hi" href="hi" class="lang">हिन्दी</a></li>
     <li><a rel="alternate" hreflang="it" href="it" class="lang">Italiano</a></li>
+    <li><a rel="alternate" hreflang="ja" href="ja" class="lang">日本語</a></li>
+    <li><a rel="alternate" hreflang="po" href="po" class="lang">Polski</a></li>
+    <li><a rel="alternate" hreflang="pt" href="pt" class="lang">Português</a></li>
     <li><a rel="alternate" hreflang="ru" href="ru" class="lang">Русский</a></li>
     <li><a rel="alternate" hreflang="uk" href="uk" class="lang">Українська</a></li>
     <li><a rel="alternate" hreflang="zh" href="zh" class="lang">中文</a></li>

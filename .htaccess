@@ -14,11 +14,17 @@ ErrorDocument 403 //twister-roulette.com
 RewriteEngine On
 
 RewriteRule ^be/? index.php?lang=be [L]
+RewriteRule ^cs/? index.php?lang=cs [L]
 RewriteRule ^de/? index.php?lang=de [L]
 RewriteRule ^en/? index.php?lang=en [L]
 RewriteRule ^es/? index.php?lang=es [L]
 RewriteRule ^fr/? index.php?lang=fr [L]
+RewriteRule ^he/? index.php?lang=he [L]
+RewriteRule ^hi/? index.php?lang=hi [L]
 RewriteRule ^it/? index.php?lang=it [L]
+RewriteRule ^ja/? index.php?lang=ja [L]
+RewriteRule ^po/? index.php?lang=po [L]
+RewriteRule ^pt/? index.php?lang=pt [L]
 RewriteRule ^ru/? index.php?lang=ru [L]
 RewriteRule ^uk/? index.php?lang=uk [L]
 RewriteRule ^zh/? index.php?lang=zh [L]

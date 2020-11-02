@@ -7,13 +7,13 @@ $(document).ready(function() {
     var pathnameArr = pathname.split('/');
     urlLang = pathnameArr[1];
     //alert('from URL: '+lang);
-    if(urlLang != 'be' && urlLang != 'de' && urlLang != 'en' && urlLang != 'es' && urlLang != 'fr' && urlLang != 'it' && urlLang != 'ru' && urlLang != 'uk' && urlLang != 'zh') {
+    if(jQuery.inArray(urlLang, languages) == -1) {
       cookieLang = $.cookie('lang'); // Get language from cookies
-      if(cookieLang != 'be' && cookieLang != 'de' && cookieLang != 'en' && cookieLang != 'es' && cookieLang != 'fr' && cookieLang != 'it' && cookieLang != 'ru' && cookieLang != 'uk' && cookieLang != 'zh') {
+      if(jQuery.inArray(cookieLang, languages) == -1) {
         if(window.navigator) {
           var navigatorLang = window.navigator.language;
           navigatorLang = navigatorLang.substr(0, 2).toLowerCase();
-          if(navigatorLang != 'be' && navigatorLang != 'de' && navigatorLang != 'en' && navigatorLang != 'es' && navigatorLang != 'fr' && navigatorLang != 'it' && navigatorLang != 'ru' && navigatorLang != 'uk' && navigatorLang != 'zh')
+          if(jQuery.inArray(navigatorLang, languages) == -1)
             lang = 'en'; // Default language
           else {
             lang = navigatorLang;
