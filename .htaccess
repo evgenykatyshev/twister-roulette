@@ -14,7 +14,7 @@ ErrorDocument 403 https://twister-roulette.com
 RewriteEngine On
 
 RewriteRule ^be/*? index.php?lang=be [L]
-RewriteRule ^ch/*? index.php?lang=ch [L]
+# RewriteRule ^cs/*? index.php?lang=cs [L]
 RewriteRule ^de/*? index.php?lang=de [L]
 RewriteRule ^en/*? index.php?lang=en [L]
 RewriteRule ^es/*? index.php?lang=es [L]

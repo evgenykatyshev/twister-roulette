@@ -104,8 +104,8 @@ document.body.appendChild(el);
     <span class="desktop-part">en</span>
   </div>
   <ul id="lang-list">
-    <li><a rel="alternate" hreflang="be" href="be" class="lang">Белорусский</a></li>
-    <li><a rel="alternate" hreflang="cs" href="cs" class="lang">Čeština</a></li>
+    <li><a rel="alternate" hreflang="be" href="be" class="lang">Белорусский</a></li><!--
+    <li><a rel="alternate" hreflang="cs" href="cs" class="lang">Čeština</a></li>-->
     <li><a rel="alternate" hreflang="de" href="de" class="lang">Deutsch</a></li>
     <li><a rel="alternate" hreflang="en" href="en" class="lang">English</a></li>
     <li><a rel="alternate" hreflang="es" href="es" class="lang">Español</a></li>

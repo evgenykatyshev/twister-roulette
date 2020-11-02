@@ -1,10 +1,10 @@
-var languages = ['be', 'ch', 'de', 'en', 'es', 'fr', 'he', 'hi', 'it', 'ja', 'pt', 'ru', 'uk', 'zh'];
+var languages = ['be', 'de', 'en', 'es', 'fr', 'he', 'hi', 'it', 'ja', 'pt', 'ru', 'uk', 'zh'];
 
 var strings =
 {
   title: {
     be: "Рулетка для Твистера",
-    ch: "Ruleta pro Twister",
+    cs: "Ruleta pro Twister",
     de: "Roulette für Twister",
     en: "Roulette for Twister",
     es: "Ruleta de Twister",
@@ -21,7 +21,7 @@ var strings =
   },
   description: {
     be: "Онлайн рулетка для гульні ў Твистер",
-    ch: "Online ruleta pro hraní Twister",
+    cs: "Online ruleta pro hraní Twister",
     de: "Online-Roulette zu spielen Twister",
     en: "Online roulette to play Twister",
     es: "Ruleta online para jugar Twister",
@@ -38,7 +38,7 @@ var strings =
   },
   keywords: {
     be: "рулетка,твистер,онлайн",
-    ch: "ruleta,twister,online",
+    cs: "ruleta,twister,online",
     de: "roulette,twister,online",
     en: "roulette,twister,online",
     es: "ruleta,twister,online",
@@ -55,7 +55,7 @@ var strings =
   },
   tip: {
     be: "Клікні ў любым месцы або націсні любую клавішу",
-    ch: "Klikněte kamkoli nebo stiskněte libovolnou klávesu",
+    cs: "Klikněte kamkoli nebo stiskněte libovolnou klávesu",
     de: "Klicken Sie irgendwo oder eine beliebige Taste drücken",
     en: "Click anywhere or press any key",
     es: "Haga clic en cualquier lugar o presione cualquier tecla",
@@ -72,7 +72,7 @@ var strings =
   },
   red: {
     be: "чырвоны",
-    ch: "červená",
+    cs: "červená",
     de: "rot",
     en: "red",
     es: "rojo",
@@ -89,7 +89,7 @@ var strings =
   },
   yellow: {
     be: "жоўты",
-    ch: "žlutá",
+    cs: "žlutá",
     de: "gelb",
     en: "yellow",
     es: "amarillo",
@@ -106,7 +106,7 @@ var strings =
   },
   green: {
     be: "зялёны",
-    ch: "zelená",
+    cs: "zelená",
     de: "grün",
     en: "green",
     es: "verde",
@@ -123,7 +123,7 @@ var strings =
   },
   blue: {
     be: "сіні",
-    ch: "modrá",
+    cs: "modrá",
     de: "blau",
     en: "blue",
     es: "azul",
@@ -140,7 +140,7 @@ var strings =
   },
   rightHand: {
     be: "правая рука",
-    ch: "pravá ruka",
+    cs: "pravá ruka",
     de: "Rechte Hand",
     en: "right hand",
     es: "mano izquierda",
@@ -157,7 +157,7 @@ var strings =
   },
   leftHand: {
     be: "левая рука",
-    ch: "levá ruka",
+    cs: "levá ruka",
     de: "Linke Hand",
     en: "left hand",
     es: "mano derecha",
@@ -174,7 +174,7 @@ var strings =
   },
   rightFoot: {
     be: "правая нага",
-    ch: "pravá noha",
+    cs: "pravá noha",
     de: "Rechte Fuß",
     en: "right foot",
     es: "pie izquierdo",
@@ -191,7 +191,7 @@ var strings =
   },
   leftFoot: {
     be: "левая нага",
-    ch: "levá noha",
+    cs: "levá noha",
     de: "Linke Fuß",
     en: "left foot",
     es: "pie derecho",
@@ -208,7 +208,7 @@ var strings =
   },
   design: {
     be: "Design",
-    ch: "Design",
+    cs: "Design",
     de: "Design",
     en: "Design",
     es: "Design",
@@ -225,7 +225,7 @@ var strings =
   },
   author: {
     be: "Эўгеній Катышев",
-    ch: "Evgeny Katyshev",
+    cs: "Evgeny Katyshev",
     de: "Evgeny Katyshev",
     en: "Evgeny Katyshev",
     es: "Evgeny Katyshev",
@@ -242,7 +242,7 @@ var strings =
   },
   "old version": {
     be: "Старая версія",
-    ch: "Stará verze",
+    cs: "Stará verze",
     de: "Alte Version",
     en: "Old version",
     es: "Versión antigua",
