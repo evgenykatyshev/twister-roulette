@@ -76,6 +76,8 @@ document.body.appendChild(el);
 </script>
 <!-- /Yandex.Metrika counter -->
 
+<script data-ad-client="ca-pub-1005301514822444" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 </head>
 
 <body>
