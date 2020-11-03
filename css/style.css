@@ -400,11 +400,28 @@ h1 {
 
 /* Adaptation */
 
-@media screen and (max-width: 400px) { /* Ширина менее 400px */
+@media screen and (max-width: 1000px) { /* Ширина менее 1000px */
+  
+  #ad_wrapper,
+  .button_hide-ad {
+    display: none;
+  }
+
+  .content_wrapper__with-ad {
+    width: 100%;
+  }
+	
+}
+
+@media screen and (max-width: 700px) { /* Ширина менее 700px */
   
   .desktop-part {
     display: none;
   }
+
+}
+
+@media screen and (max-width: 400px) { /* Ширина менее 400px */
 	
 }
 
@@ -466,10 +483,6 @@ screen and (orientation: portrait) and (max-width: 400px) { /* Портретн�
   #author {
     margin-right: 8px;
   }
-  
-  .desktop-part {
-    display: none;
-  }
 	
 }
 
@@ -490,10 +503,6 @@ screen and (orientation: portrait) and (max-width: 400px) { /* Портретн�
 	#color-name {
 		top: 30vh;
 	}
-  
-  .desktop-part {
-    display: none;
-  }
 	
 }
 
@@ -503,18 +512,5 @@ screen and (orientation: portrait) and (max-width: 400px) { /* Портретн�
 	#color-name {
 		font-size: 10vh;	
 	}
-	
-}
-
-@media screen and (max-width: 1000px) { /* Ширина менее 1000px */
-  
-  #ad_wrapper,
-  .button_hide-ad {
-    display: none;
-  }
-
-  .content_wrapper__with-ad {
-    width: 100%;
-  }
 	
 }
