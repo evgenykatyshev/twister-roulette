@@ -59,7 +59,7 @@ document.body.appendChild(el);
 
 <?php include_once('img/icons.svg'); ?>
 
-<div class="content_wrapper content_wrapper__with-ad">
+<div class="content__wrapper content__wrapper_full">
 
 <header id="header">
 	<h1 id="title">Roulette for Twister</h1><!--
@@ -75,12 +75,12 @@ document.body.appendChild(el);
 		<svg class="button__icon button__icon_on">
 			<use xlink:href="#sound_on_icon"></use>
 		</svg>
-	</div>-->
+	</div>
   <div class="button button_hide-ad">
 	  <svg class="button__icon chevron-right_icon">
 			<use xlink:href="#chevron-right_icon"></use>
 		</svg>
-	</div>
+	</div>-->
   <div class="button button_lang">
     <svg class="button__icon language_icon">
       <use xlink:href="#language_icon"></use>
@@ -130,8 +130,8 @@ document.body.appendChild(el);
 	</div>
 	<div id="tip" class="desktop-part">Click anywhere or press any key</div>
   <div id="about">
-    <span id="author"><span class="desktop-part">Design: </span><a href="//evgenykatyshev.ru/projects/twister-roulette/" class="link"><span class="desktop-part">Evgeny </span>Katyshev</a></span>
-    <a id="old" href="//old.twister-roulette.com/" class="link desktop-part">Old version</a>
+    <span id="author"><span class="desktop-part">Design: </span><a href="//evgenykatyshev.ru/projects/twister-roulette/" class="link link_light"><span class="desktop-part">Evgeny </span>Katyshev</a></span>
+    <a id="old" href="//old.twister-roulette.com/" class="link link_light desktop-part">Old version</a>
   </div>
 </header>
 
@@ -142,11 +142,10 @@ document.body.appendChild(el);
 </div>
 
 </div>
-
+<!--
 <aside id="ad_wrapper">
 <div id="ad">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Twister. Desktop sidebar -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-1005301514822444"
@@ -158,6 +157,6 @@ document.body.appendChild(el);
 </script>
 </div>
 </aside>
-
+-->
 </body>
 </html>

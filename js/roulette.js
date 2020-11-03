@@ -44,7 +44,7 @@ $(document).ready(function() {
 
   $('.button_lang span').text(lang);
 
-  var title = strings['title'][lang];
+  var title = strings['title2'][lang];
   var tip = strings['tip'][lang];
 
   $('title').html(title);
@@ -53,7 +53,7 @@ $(document).ready(function() {
   $('#old').attr('href', '//old.twister-roulette.com/'+lang);
   $('#old').text(strings['old version'][lang]);
   var authorArr = strings['author'][lang].split(' ');
-  $('#author').html('<span class="desktop-part">© </span><a href="//evgenykatyshev.ru/projects/twister-roulette/" class="link"><span class="desktop-part">' + authorArr[0] + ' </span>' + authorArr[1] + '</a>');
+  $('#author').html('<span class="desktop-part">© </span><a href="//evgenykatyshev.ru/projects/twister-roulette/" class="link link_light"><span class="desktop-part">' + authorArr[0] + ' </span>' + authorArr[1] + '</a>');
 
   var colorNames = [
     strings['red'][lang],
@@ -122,7 +122,7 @@ $(document).ready(function() {
 
   $('#main').on('click tap taphold', function() {
     spin();
-    $('#title').hide();
+    //$('#title').hide();
     $('#tip').hide();
     $('#lang-list').hide();
   });
