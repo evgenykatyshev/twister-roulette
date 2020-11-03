@@ -49,32 +49,7 @@ document.body.appendChild(el);
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet" />
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter26947902 = new Ya.Metrika({id:26947902,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-        } catch(e) { }
-    });
-
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(26947902, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/26947902" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 <script data-ad-client="ca-pub-1005301514822444" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
@@ -83,6 +58,8 @@ document.body.appendChild(el);
 <body>
 
 <?php include_once('img/icons.svg'); ?>
+
+<div class="content_wrapper content_wrapper__with-ad">
 
 <header id="header">
 	<h1 id="title">Roulette for Twister</h1><!--
@@ -99,6 +76,11 @@ document.body.appendChild(el);
 			<use xlink:href="#sound_on_icon"></use>
 		</svg>
 	</div>-->
+  <div class="button button_hide-ad">
+	  <svg class="button__icon chevron-right_icon">
+			<use xlink:href="#chevron-right_icon"></use>
+		</svg>
+	</div>
   <div class="button button_lang">
     <svg class="button__icon language_icon">
       <use xlink:href="#language_icon"></use>
@@ -153,19 +135,29 @@ document.body.appendChild(el);
   </div>
 </header>
 
-<div id="settings" class="hidden">
-  <div class="button button_close">
-	  <svg class="button__icon">
-			<use xlink:href="#close_icon"></use>
-		</svg>
-	</div>
-</div>
-
 <div id="main">
 	<div id="limb"></div>
 	<div id="circle"></div>
 	<div id="color-name"></div>
 </div>
+
+</div>
+
+<aside id="ad_wrapper">
+<div id="ad">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Twister. Desktop sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1005301514822444"
+     data-ad-slot="6038494857"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</aside>
 
 </body>
 </html>
