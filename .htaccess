@@ -26,6 +26,7 @@ RewriteRule ^ja/*? index.php?lang=ja [L]
 RewriteRule ^po/*? index.php?lang=po [L]
 RewriteRule ^pt/*? index.php?lang=pt [L]
 RewriteRule ^ru/*? index.php?lang=ru [L]
+RewriteRule ^tr/*? index.php?lang=tr [L]
 RewriteRule ^uk/*? index.php?lang=uk [L]
 RewriteRule ^zh/*? index.php?lang=zh [L]
 

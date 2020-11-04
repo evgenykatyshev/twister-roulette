@@ -101,6 +101,7 @@ document.body.appendChild(el);
     <li><a rel="alternate" hreflang="po" href="po" class="lang">Polski</a></li>
     <li><a rel="alternate" hreflang="pt" href="pt" class="lang">Português</a></li>
     <li><a rel="alternate" hreflang="ru" href="ru" class="lang">Русский</a></li>
+    <li><a rel="alternate" hreflang="tr" href="tr" class="lang">Türkçe</a></li>
     <li><a rel="alternate" hreflang="uk" href="uk" class="lang">Українська</a></li>
     <li><a rel="alternate" hreflang="zh" href="zh" class="lang">中文</a></li>
   </ul>
