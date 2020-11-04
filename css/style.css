@@ -149,8 +149,8 @@ a.link_dark:hover {
   color: rgba(255, 255, 255, .8);
   text-transform: uppercase;
   font-weight: 500;
-  width: 76px;
-  text-align: right;
+  *width: 76px;
+  *text-align: right;
 }
 
 .button_lang span {
