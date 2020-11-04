@@ -30,6 +30,7 @@ $(document).ready(function() {
       lang = urlLang;
       $.cookie('lang', lang, { path: '/' });
     }
+    window.history.pushState('/', 'Title', lang);
     //alert('final lang: '+lang);
   }
 
@@ -44,11 +45,12 @@ $(document).ready(function() {
 
   $('.button_lang span').text(lang);
 
-  var title = strings['title2'][lang];
+  var title = strings['title'][lang];
+  var title2 = strings['title2'][lang];
   var tip = strings['tip'][lang];
 
   $('title').html(title);
-  $('#title').html(title);
+  $('#title').html(title2);
   $('#tip').text(tip);
   $('#old').attr('href', '//old.twister-roulette.com/'+lang);
   $('#old').text(strings['old version'][lang]);
